@@ -84,7 +84,7 @@ const NavBarAndMenuBar = ({ children }: any) => {
                         <Image width={40} height={40} src="/svg/menuIcons/gear.svg" className="w-[40px] h-[40px] m-[24px]" alt={''} />
                     </Link>
                 </div>
-                <div className="flex-1 overflow-y-auto p-6">
+                <div className="flex-1 overflow-y-auto p-6 pl-[40px]">
                     {children}
                 </div>
             </div>
