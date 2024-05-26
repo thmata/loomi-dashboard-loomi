@@ -1,0 +1,22 @@
+.wrapperIcon:first-child {
+    border-bottom: 1px solid #F3F5F6;
+}
+
+.boxShadowCustom {
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.active svg {
+    border-radius: 6px;
+    background-color: #5A4CA7;
+    fill: #fff !important;
+    opacity: 1 !important;
+}
+
+.boxShadowCustom svg {
+    fill: #4e5d66;
+}
+
+.boxShadowCustom .logsvg svg g {
+    transform: translate(9px, 11px);
+}

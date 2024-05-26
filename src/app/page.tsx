@@ -21,7 +21,7 @@ const LoginPage = () => {
 
     signIn("credentials", {
       ...data,
-      callbackUrl: "/"
+      callbackUrl: "/dashboard"
     })
 
   }

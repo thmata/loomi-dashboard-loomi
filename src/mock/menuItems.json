@@ -1,0 +1,60 @@
+{
+    "menuItems": {
+        "menu": [
+            {
+                "id": 1,
+                "name": "Menu",
+                "pathImg": "/svg/menuIcons/menu.svg",
+                "url": ""
+            },
+            {
+                "id": 2,
+                "name": "dashboard",
+                "pathImg": "/svg/menuIcons/home.svg",
+                "url": "/dashboard"
+            },
+            {
+                "id": 3,
+                "name": "Cat",
+                "pathImg": "/svg/menuIcons/cat.svg",
+                "url": ""
+            },
+            {
+                "id": 4,
+                "name": "Services",
+                "pathImg": "/svg/menuIcons/services.svg",
+                "url": ""
+            },
+            {
+                "id": 4,
+                "name": "Log",
+                "pathImg": "/svg/menuIcons/Log.svg",
+                "url": ""
+            },
+            {
+                "id": 5,
+                "name": "Buy",
+                "pathImg": "/svg/menuIcons/Buy.svg",
+                "url": ""
+            },
+            {
+                "id": 6,
+                "name": "Card",
+                "pathImg": "/svg/menuIcons/card.svg",
+                "url": ""
+            },
+            {
+                "id": 7,
+                "name": "Text",
+                "pathImg": "/svg/menuIcons/text.svg",
+                "url": ""
+            },
+            {
+                "id": 8,
+                "name": "Gear",
+                "pathImg": "/svg/menuIcons/gear.svg",
+                "url": ""
+            }
+        ]
+    }
+}

@@ -25,6 +25,10 @@ h1 {
   font-family: "Ubuntu";
 }
 
+html {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 
 @layer utilities {
   .text-balance {
