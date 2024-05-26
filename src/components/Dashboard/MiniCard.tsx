@@ -37,7 +37,7 @@ const MiniCard: React.FC<MiniCardProps> = ({
 
     return (
         <div className="w-[232px] h-[100%] boxShadowCustom bg-white rounded-[15px] pl-4 pt-6 pb-5 flex flex-col justify-between">
-            <p className="text-[#4E5D66] text-[16px] font-bold">{title}</p>
+            <p className="text-[#4E5D66] text-[16px] font-bold leading-[15px] max-w-[189px] ">{title}</p>
             {percentage !== undefined && (
                 <span
                     style={{ boxShadow: "0px 0px 20px #0000001A" }}

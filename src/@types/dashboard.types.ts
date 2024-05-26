@@ -1,9 +1,9 @@
-export interface GrowthData {
+interface GrowthData {
     value: number;
     growth: number;
 }
 
-export interface ProductData {
+interface ProductData {
     type: string;
     value: number;
     since: string;
@@ -16,4 +16,19 @@ export interface DashboardData {
     lowStock: ProductData[];
     ordersPlacedThisMonth: GrowthData;
     productsSoldThisMonth: GrowthData;
+}
+
+interface Metrics {
+    value: number;
+    growth: number;
+}
+
+export interface ConversionsResume {
+    "total-per-day": Metrics;
+    "products-view-per-month": Metrics;
+    "product-page-conversion-per-month": Metrics;
+    "add-to-cart-per-month": Metrics;
+    "checkout-email-per-month": Metrics;
+    "checkout-payment-per-month": Metrics;
+    "checkout-freight-per-month": Metrics;
 }
