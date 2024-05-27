@@ -5,7 +5,7 @@ import { ConversionsResume } from "@/@types/dashboard.types"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import "./style.css"
-import MiniCard from './MiniCard';
+import MiniCard from './components/MiniCard';
 
 const ConversionFunnel = () => {
 

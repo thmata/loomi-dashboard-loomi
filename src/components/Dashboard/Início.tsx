@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from 'react';
-import MiniCard from './MiniCard';
+import MiniCard from './components/MiniCard';
 import axios from 'axios';
 import { DashboardData } from "@/@types/dashboard.types";
 import { Swiper, SwiperSlide } from 'swiper/react';
