@@ -18,11 +18,30 @@
 }
 
 body {
-  background: transparent url('/img/wallpaper.png') 0% 0% padding-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/img/wallpaper.png') no-repeat center center fixed;
+  background-size: cover;
+  opacity: 1;
+  z-index: -1;
 }
 
 h1 {
   font-family: "Ubuntu";
+}
+
+html {
+  font-family: 'Ubuntu', sans-serif;
 }
 
 

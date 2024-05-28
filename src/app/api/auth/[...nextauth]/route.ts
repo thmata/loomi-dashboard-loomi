@@ -10,33 +10,46 @@ const handler = NextAuth({
             name: 'Credentials',
             credentials: {
                 email: { label: "email", type: "email", placeholder: "jsmith@gmail.com" },
-                password: { label: "password", type: "password" }
+                password: { label: "password", type: "password" },
+                avatar: { label: "avatar", type: "text" }
             },
             async authorize(credentials, req) {
                 if (!credentials) {
                     return null;
                 }
 
-                const response = await fetch("https://628bf017667aea3a3e387e51.mockapi.io/login", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify(credentials)
-                });
+                try {
+                    const response = await fetch("https://628bf017667aea3a3e387e51.mockapi.io/login", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(credentials)
+                    });
 
-                if (response.ok) {
-                    const data = await response.json();
-                    const accessToken = data.access_token;
+                    const responseImg = await fetch("https://628bf017667aea3a3e387e51.mockapi.io/me")
+                    const dataImg = await responseImg.json();
 
-                    return {
-                        id: data.id,
-                        email: credentials.email,
-                        token: accessToken
-                    };
+                    if (response.ok && responseImg.ok) {
+                        const data = await response.json();
+                        const accessToken = data.access_token;
+
+                        return {
+                            id: data.id,
+                            email: credentials.email,
+                            username: dataImg.username,
+                            name: dataImg.avatar,
+                            avatar: dataImg.avatar,
+                            token: accessToken
+                        };
+                    }
+
+                    return null;
+                } catch (error) {
+                    console.error(error);
+                    return null;
                 }
 
-                return null;
             }
         })
     ]
