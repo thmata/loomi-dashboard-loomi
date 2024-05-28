@@ -14,6 +14,16 @@ const NavBarAndMenuBar = ({ children }: { children: ReactNode }) => {
         avatar: ""
     })
 
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            const url = new URL(window?.location?.href);
+            const path = url.pathname;
+            const valorDepoisDaBarra = path.split('/')[1];
+            setPathValue(valorDepoisDaBarra);
+        }
+    }, []);
+
+
     async function getUserInformation() {
         const response = await fetch("https://628bf017667aea3a3e387e51.mockapi.io/me").then(res => res.json())
         setUser(response)
