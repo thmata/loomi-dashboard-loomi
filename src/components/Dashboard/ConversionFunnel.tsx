@@ -75,6 +75,22 @@ const ConversionFunnel = () => {
                     onSwiper={(swiper) => console.log(swiper)}
                     className="SwiperSlider"
                     style={{ marginLeft: 0, paddingBottom: 5, paddingTop: 5 }}
+                    breakpoints={
+                        {
+                            1024: {
+                                slidesPerView: 4.1,
+                                spaceBetween: 32
+                            },
+                            1480: {
+                                slidesPerView: 5.1,
+                                spaceBetween: 32
+                            },
+                            1736: {
+                                slidesPerView: 7,
+                                spaceBetween: 32
+                            },
+                        }
+                    }
                 >
                     <SwiperSlide><MiniCard
                         title="Sessões"

@@ -32,3 +32,12 @@ export interface ConversionsResume {
     "checkout-payment-per-month": Metrics;
     "checkout-freight-per-month": Metrics;
 }
+
+export interface Product {
+    createdAt: string;
+    name: string;
+    color: string;
+    status: string;
+    description: string;
+    id: string;
+}
