@@ -21,8 +21,6 @@ const OrdersPerMonth = () => {
         fetchData();
     }, []);
 
-    console.log("## values", values)
-
     const options = {
         series: [{
             data: values
@@ -33,11 +31,6 @@ const OrdersPerMonth = () => {
             },
             height: 150,
             type: 'bar',
-            events: {
-                click: function ({ chart, w, e }: any) {
-                    // console.log(chart, w, e)
-                }
-            }
         },
         colors: ['#393C56'],
         plotOptions: {
@@ -93,7 +86,8 @@ const OrdersPerMonth = () => {
 
             </div>
             {/* @ts-ignore */}
-            <Chart options={options} series={options.series} type={options.chart.type} height={300} width={550} />
+            {(typeof window !== 'undefined') && <Chart options={options} series={options.series} type={options.chart.type} height={300} width={550} />}
+
         </div>
     );
 };

@@ -30,11 +30,6 @@ const OrdersPerMonth = () => {
             },
             height: 150,
             type: 'bar',
-            events: {
-                click: function ({ chart, w, e }: any) {
-                    // console.log(chart, w, e)
-                }
-            }
         },
         colors: ['#393C56'],
         plotOptions: {

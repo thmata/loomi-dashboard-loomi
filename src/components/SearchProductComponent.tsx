@@ -2,7 +2,11 @@
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 
-const SearchProductComponent = ({ onSearch }: any) => {
+interface Props {
+  onSearch: (searchTerm: string) => void;
+}
+
+const SearchProductComponent = ({ onSearch }: Props) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [debouncedSearchTerm, setDebouncedSearchTerm] = useState(searchTerm);
 

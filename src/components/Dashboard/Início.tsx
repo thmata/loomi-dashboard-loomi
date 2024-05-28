@@ -52,6 +52,10 @@ const Inicio = () => {
         fetchData();
     }, []);
 
+    if (typeof window === 'undefined') {
+        return null
+    }
+
     const formatCurrency = (value: number | undefined) => {
         if (!value) {
             return '0,00';
