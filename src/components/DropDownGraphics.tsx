@@ -12,7 +12,7 @@ const DropDownGraphics = ({ disableProp = true }: { disableProp?: boolean }) => 
         setIsOpen(!isOpen);
     };
 
-    const handleYearSelect = (year: any) => {
+    const handleYearSelect = (year: string) => {
         setSelectedYear(year);
         setIsOpen(false);
     };

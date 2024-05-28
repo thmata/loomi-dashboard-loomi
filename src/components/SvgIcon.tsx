@@ -5,7 +5,7 @@ interface Props {
     color?: string; // Cor a ser aplicada (opcional)
 }
 
-const SVGComponent: React.FC<Props> = ({ src, color }: any) => {
+const SVGComponent = ({ src, color }: Props) => {
     const fill = color || '#000'; // Cor padrão preta
 
     return (

@@ -1,13 +1,11 @@
 "use client"
-import { useSession } from 'next-auth/react';
-import React, { useEffect, useState } from 'react';
-import menuMock from "@/mock/menuItems.json"
+import React, { ReactNode, useEffect, useState } from 'react';
 import Image from 'next/image';
 import "./style.css"
 import Link from 'next/link';
 import { CatSvg, HomeSvg, LogSvg, CatSelectedSvg, LogSelectedSvg } from '../../../public/svg/menuIcons';
 
-const NavBarAndMenuBar = ({ children }: any) => {
+const NavBarAndMenuBar = ({ children }: { children: ReactNode }) => {
     const [pathValue, setPathValue] = useState('');
 
     const [user, setUser] = useState({
@@ -15,14 +13,6 @@ const NavBarAndMenuBar = ({ children }: any) => {
         username: "",
         avatar: ""
     })
-
-    useEffect(() => {
-        const url = new URL(window.location.href);
-        const path = url.pathname;
-        const valorDepoisDaBarra = path.split('/')[1];
-        setPathValue(valorDepoisDaBarra);
-    }, []);
-
 
     async function getUserInformation() {
         const response = await fetch("https://628bf017667aea3a3e387e51.mockapi.io/me").then(res => res.json())
