@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Projeto Dashboard E-Commerce Loomi
 
-## Getting Started
+---
+![1654892399292](https://github.com/thmata/loomi-dashboard-loomi/assets/85140172/db1ee94f-b7cb-4121-b633-58ca121b5d4b)
+---
 
-First, run the development server:
+## 🚀 Objetivo
 
+O objetivo deste projeto é desenvolver uma tela de login para acesso ao dashboard de um e-commerce, onde serão exibidas métricas importantes. Além disso, o dashboard fornecerá acesso a um mapa com informações sobre todas as entregas em andamento. Também será implementada uma página de produtos, permitindo o cadastro dos itens disponíveis no e-commerce.
+
+Expectativa: https://xd.adobe.com/view/9b506aec-769c-41a4-8ac8-9aa66f11f43a-ce03/screen/ebe64315-6f61-4830-a734-eccdc3a64391/
+
+## 🏃‍♀️ OBJETIVOS 
+
+A Aplicação deve conter de base:
+
+- [X] Criação da Tela de Login com Autenticação Next-Auth
+- [ ] Protejor Demais Rotas Sem Validação
+- [X] Página de Dashboard
+- [ ] Criação de Todos os Gráficos e Métricas
+- [ ] Página de Adição de Produtos
+- [X] Página de Mapa
+
+## 📸 Imagens do Projeto Atual 28/05/2024
+
+<table>
+  <tr>
+    <td valign="top"><img src="https://github.com/thmata/loomi-dashboard-loomi/assets/85140172/20139075-8a51-4411-8338-18afcda1e72c"/></td>
+    <td valign="top"><img src="https://github.com/thmata/loomi-dashboard-loomi/assets/85140172/b6af870e-6103-4802-848e-7dbda358285a"/></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td valign="top"><img src="https://github.com/thmata/loomi-dashboard-loomi/assets/85140172/1a5b019d-dba6-4959-afa7-0f5d4493df74"/></td>
+    <td valign="top"><img src="https://github.com/thmata/loomi-dashboard-loomi/assets/85140172/da707736-fb0d-45a3-9f69-5c62a1eae725"/></td>
+  </tr>
+</table>
+
+
+## 🧰 Tecnologias e Bibliotecas
+
+* ReactJs
+* NextJs
+* Typescript
+* Apexcharts
+* Mapbox
+
+## ⚙️ Rodando o Projeto
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone este repositório para a pasta anterior
+$ git clone git@github.com:thmata/loomi-dashboard-loomi.git
+
+# Acesse a pasta IgniteFeed
+$ cd loomi-dashboard-loomi
+
+# Instale as dependências
+$ yarn install
+ou
+$ npm install
+
+# Executando o Projeto
+$ npm run dev 
+ou
+$ yarn dev
+# Acesse http://localhost:3000 no seu navagador
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+EM DESENVOLVIMENTO... 🧑‍💻
