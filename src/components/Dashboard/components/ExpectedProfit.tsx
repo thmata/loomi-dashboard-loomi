@@ -7,7 +7,6 @@ import Chart from "react-apexcharts";
 const OrdersPerMonth = () => {
     const [values, setValues] = useState<Number[]>([]);
 
-
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -20,8 +19,6 @@ const OrdersPerMonth = () => {
         };
         fetchData();
     }, []);
-
-    console.log("## values", values)
 
     const options = {
         series: [{
