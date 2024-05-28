@@ -52,7 +52,7 @@ const NavBarAndMenuBar = ({ children }: any) => {
                     <Link href={""} className={`flex flex-col items-center cursor-pointer wrapperIcon`}>
                         <Image width={40} height={40} src="/svg/menuIcons/menu.svg" className="w-[40px] h-[40px] m-[24px]" alt={''} />
                     </Link>
-                    <Link href={""} className={`flex flex-col items-center cursor-pointer wrapperIcon ${pathValue === "dashboard" ? "active" : ""}`}>
+                    <Link style={{ opacity: pathValue !== "dashboard" ? 0.6 : 1 }} href={"/dashboard"} className={`flex flex-col items-center cursor-pointer wrapperIcon ${pathValue === "dashboard" ? "active" : ""}`}>
                         <HomeSvg width={40} height={40} className="m-[24px]" />
                     </Link>
                     {pathValue === "product" ? <Link href={""} className={`flex flex-col items-center cursor-pointer wrapperIcon active`}>
@@ -63,9 +63,9 @@ const NavBarAndMenuBar = ({ children }: any) => {
                     <Link href={""} className={`flex flex-col items-center cursor-pointer wrapperIcon`}>
                         <Image width={40} height={40} src="/svg/menuIcons/services.svg" className="w-[40px] h-[40px] m-[24px]" alt={''} />
                     </Link>
-                    {pathValue === "log" ? <Link href={""} className={`flex flex-col items-center cursor-pointer wrapperIcon active logsvg`}>
+                    {pathValue === "log" ? <Link href={"/log"} className={`flex flex-col items-center cursor-pointer wrapperIcon active logsvg`}>
                         <LogSelectedSvg fill={"#fff"} width={40} height={40} className="m-[24px]" />
-                    </Link> : <Link href={""} className={`flex flex-col items-center cursor-pointer wrapperIcon`}>
+                    </Link> : <Link href={"/log"} className={`flex flex-col items-center cursor-pointer wrapperIcon`}>
                         <LogSvg fill={"#fff"} width={40} height={40} className="m-[24px]" />
                     </Link>}
                     <Link href={""} className={`flex flex-col items-center cursor-pointer wrapperIcon`}>
