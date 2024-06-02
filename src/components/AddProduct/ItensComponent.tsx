@@ -4,7 +4,7 @@ import { UseFormRegister, FieldErrors } from 'react-hook-form';
 
 interface ItensComponentProps {
     register: UseFormRegister<any>;
-    errors: FieldErrors<any>;
+    errors: FieldErrors;
 }
 
 const ItensComponent: React.FC<ItensComponentProps> = ({ register, errors }) => {
