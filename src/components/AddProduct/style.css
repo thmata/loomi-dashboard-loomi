@@ -1,0 +1,74 @@
+.checkbox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.checkbox.selected {
+    background-color: #4caf50;
+    /* cor de fundo quando selecionado */
+}
+
+/* style.css */
+.option-item {
+    position: relative;
+}
+
+.option-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 12px;
+    width: 1px;
+    height: 100%;
+    background-color: #4E5D66;
+    opacity: 0.24;
+    z-index: -1;
+}
+
+.option-item:first-child::before {
+    top: 50%;
+    height: 50%;
+}
+
+.option-item:nth-child(2)::before {
+    top: 50%;
+    height: 50%;
+}
+
+.option-item:last-child::before {
+    height: 50%;
+}
+
+.suboption-item {
+    position: relative;
+}
+
+.suboption-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 19px;
+    width: 1px;
+    height: 100%;
+    background-color: #4E5D66;
+    opacity: 0.24;
+    z-index: -1;
+}
+
+.suboption-item:first-child::before {
+    top: 50%;
+    height: 50%;
+}
+
+.suboption-item:last-child::before {
+    height: 50%;
+}
+
+.option-item .text-center,
+.suboption-item .text-center {
+    position: relative;
+    z-index: 1;
+}

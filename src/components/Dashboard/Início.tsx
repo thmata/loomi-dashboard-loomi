@@ -75,8 +75,6 @@ const Inicio = () => {
                     spaceBetween={50}
                     slidesPerView={6}
                     centeredSlides={false}
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
                     className="SwiperSlider"
                     style={{ marginLeft: 0, paddingBottom: 5, paddingTop: 5 }}
                     breakpoints={

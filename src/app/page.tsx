@@ -41,7 +41,7 @@ const LoginPage = () => {
               E-mail:
             </label>
             <input type="email" id="email" name="email" required
-              className="bg-[#F3F5F6] rounded-[8px] w-full h-[60px] pl-[24px] text-[#333333] text-[20px] font-ubuntu"
+              className="bg-[#F3F5F6] rounded-[8px] w-full h-[60px] pl-[24px] text-[#333333] text-4 font-ubuntu"
             />
           </div>
 
@@ -50,11 +50,11 @@ const LoginPage = () => {
               Senha:
             </label>
             <input type="password" id="password" name="password" required
-              className="bg-[#F3F5F6] rounded-[8px] w-full h-[60px] pl-[24px] text-[#333333] text-[20px] font-ubuntu"
+              className="bg-[#F3F5F6] rounded-[8px] w-full h-[60px] pl-[24px] text-[#333333] text-4 font-ubuntu"
             />
           </div >
 
-          <button type="submit" className="bg-[#5A4CA7] rounded-lg w-[120px] h-[40px] justify-center mx-auto text-[20px] text-[#FFF]">
+          <button type="submit" className="bg-[#5A4CA7] rounded-lg w-[120px] h-[40px] justify-center mx-auto text-4 text-[#FFF]">
             Entrar
           </button>
           {error === "CredentialsSignin" && (

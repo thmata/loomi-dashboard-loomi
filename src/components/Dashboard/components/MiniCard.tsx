@@ -61,7 +61,7 @@ const MiniCard: React.FC<MiniCardProps> = ({
             <p className={`${colorSubTitleText} text-[14px] mb-[18.5px]`}>{subtitleText || " "}</p>
             <span className="text-[#4E5D66] text-[16px] flex items-center">
                 {monetary && <p className="mr-[12px]">R$</p>}
-                <strong className="font-bold text-[20px]">{textValue}</strong>
+                <strong className="font-bold text-4">{textValue}</strong>
                 <p className="ml-[13px]">{mensageValue}</p>
             </span>
         </div>

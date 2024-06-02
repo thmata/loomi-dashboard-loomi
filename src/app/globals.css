@@ -50,3 +50,10 @@ html {
     text-wrap: balance;
   }
 }
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: none;
+}

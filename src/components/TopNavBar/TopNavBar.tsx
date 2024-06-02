@@ -37,9 +37,11 @@ const NavBarAndMenuBar = ({ children }: { children: ReactNode }) => {
     return (
         <div className="flex flex-col h-screen">
             <div className="bg-white bg-padding-box shadow-md text-white py-4 px-6 flex justify-between items-center fixed top-0 left-0 right-0 z-10">
-                <div className="flex items-center">
-                    <img src="/svg/logo-loomi-dashboard.svg" alt="Logo da sua empresa" className="w-[69px] h-[60px] mr-2" />
-                </div>
+                <Link href={"/dashboard"}>
+                    <div className="flex items-center">
+                        <img src="/svg/logo-loomi-dashboard.svg" alt="Logo da sua empresa" className="w-[69px] h-[60px] mr-2" />
+                    </div>
+                </Link>
                 <div className="flex items-center" >
                     <span className="text-sm text-[#4E5D66] text-[16px] font-medium mr-[13px]">{user && user.name}</span>
                     <img className="w-[40px] h-[40px] rounded-full" src={user.avatar} alt="" />
@@ -55,9 +57,9 @@ const NavBarAndMenuBar = ({ children }: { children: ReactNode }) => {
                     <Link style={{ opacity: pathValue !== "dashboard" ? 0.6 : 1 }} href={"/dashboard"} className={`flex flex-col items-center cursor-pointer wrapperIcon ${pathValue === "dashboard" ? "active" : ""}`}>
                         <HomeSvg width={40} height={40} className="m-[24px]" />
                     </Link>
-                    {pathValue === "product" ? <Link href={""} className={`flex flex-col items-center cursor-pointer wrapperIcon active`}>
+                    {pathValue === "addproduct" ? <Link href={""} className={`flex flex-col items-center cursor-pointer wrapperIcon active`}>
                         <CatSelectedSvg width={40} height={40} className="m-[24px]" />
-                    </Link> : <Link href={""} className={`flex flex-col items-center cursor-pointer wrapperIcon`}>
+                    </Link> : <Link href={"/addproduct"} className={`flex flex-col items-center cursor-pointer wrapperIcon`}>
                         <CatSvg width={40} height={40} className="m-[24px]" />
                     </Link>}
                     <Link href={""} className={`flex flex-col items-center cursor-pointer wrapperIcon`}>

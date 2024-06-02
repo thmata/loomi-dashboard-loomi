@@ -64,13 +64,13 @@ const ProductList: React.FC = () => {
                     </div>
                     {typeof produtos === "string" ? <p className="text-center">Nenhum produto encontrado</p> : produtos?.map((item) => (
                         <div key={item.id} className="flex w-full mt-2">
-                            <div className="text-[#333333] flex items-center text-[20px] flex-1 px-4 py-2 border-b border-gray-300 truncate mr-[40px] max-w-[546px] whitespace-normal">
+                            <div className="text-[#333333] flex items-center text-4 flex-1 px-4 py-2 border-b border-gray-300 truncate mr-[40px] max-w-[546px] whitespace-normal">
                                 <Image src={"/img/productImage.png"} alt='' width={80} height={80} className='mr-[24px]' />
                                 {item.name}
                             </div>
-                            <div className="text-[#333333] flex items-center text-[20px] flex-1 px-4 py-2 border-b justify-center border-gray-300 truncate max-w-[420px] whitespace-normal">{item.color}</div>
-                            <div className="text-[#333333] flex items-center text-[20px] flex-1 px-4 py-2 border-b justify-center border-gray-300 truncate max-w-[650px] whitespace-normal">{item.description}</div>
-                            <div className="text-[#333333] flex items-center text-[20px] flex-1 px-4 py-2 border-b justify-center border-gray-300 truncate max-w-[200px] whitespace-normal">{item.status}
+                            <div className="text-[#333333] flex items-center text-4 flex-1 px-4 py-2 border-b justify-center border-gray-300 truncate max-w-[420px] whitespace-normal">{item.color}</div>
+                            <div className="text-[#333333] flex items-center text-4 flex-1 px-4 py-2 border-b justify-center border-gray-300 truncate max-w-[650px] whitespace-normal">{item.description}</div>
+                            <div className="text-[#333333] flex items-center text-4 flex-1 px-4 py-2 border-b justify-center border-gray-300 truncate max-w-[200px] whitespace-normal">{item.status}
                                 <Image src={"/svg/checkProduct.svg"} alt='' width={40} height={40} />
                             </div>
                         </div>

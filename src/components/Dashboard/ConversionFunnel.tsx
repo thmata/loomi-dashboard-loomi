@@ -61,8 +61,6 @@ const ConversionFunnel = () => {
                     spaceBetween={50}
                     slidesPerView={7}
                     centeredSlides={false}
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
                     className="SwiperSlider"
                     style={{ marginLeft: 0, paddingBottom: 5, paddingTop: 5 }}
                     breakpoints={
