@@ -3,6 +3,7 @@ import ConversionFunnel from '@/components/Dashboard/ConversionFunnel';
 import Início from '@/components/Dashboard/Início';
 import ProductList from '@/components/Dashboard/ProductList';
 import SaleDashboard from '@/components/Dashboard/SaleDashboard';
+import UserProfile from '@/components/Dashboard/UserProfile';
 import React from 'react';
 
 const Dashboard = () => {
@@ -14,8 +15,9 @@ const Dashboard = () => {
     return (
         <div>
             <Início />
-            <ConversionFunnel />
             <SaleDashboard />
+            <ConversionFunnel />
+            <UserProfile />
             <ProductList />
         </div>
     );

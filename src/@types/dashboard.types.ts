@@ -41,3 +41,25 @@ export interface Product {
     description: string;
     id: string;
 }
+
+
+interface TransactionPerAge {
+    category: string;
+    value: number;
+}
+
+interface SessionsPerSex {
+    male: number;
+    female: number;
+}
+
+interface TransactionPerClientType {
+    category: string;
+    value: number;
+}
+
+export interface UserProfileProps {
+    "transactions-per-age": TransactionPerAge[];
+    "sessions-per-sex": SessionsPerSex;
+    "transactions-per-client-type": TransactionPerClientType[];
+}

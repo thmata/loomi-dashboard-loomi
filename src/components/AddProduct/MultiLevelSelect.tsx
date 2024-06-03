@@ -123,7 +123,7 @@ const MultiLevelSelect: React.FC<MultiLevelSelectProps> = ({ options, placeholde
                                                     className="relative flex items-center px-2 py-2 cursor-pointer suboption-item"
                                                     onClick={() => handleSubOptionClick(option, subOption)}
                                                 >
-                                                    <div className={`w-[24px] h-[24px] rounded-[5px] mr-[12px] bg-[#F5F5F5] flex justify-center ${selectedSubOptions[option]?.includes(subOption) ? "bg-[#C0D7E5]" : "border border-[#2F2D32]"}`}>{selectedSubOptions[option]?.includes(subOption) ? <Image src={"/svg/check-mark.svg"} width={14} height={14} alt='checkmark' /> : ''} </div>
+                                                    <div className={`w-[24px] h-[24px] rounded-[5px] mr-[12px]  flex justify-center ${selectedSubOptions[option]?.includes(subOption) ? "bg-[#C0D7E5]" : "border border-[#2F2D32] bg-[#F5F5F5]"}`}>{selectedSubOptions[option]?.includes(subOption) ? <Image src={"/svg/check-mark.svg"} width={14} height={14} alt='checkmark' /> : ''} </div>
                                                     <p className='text-[#4E5D66] text-4'>{subOption}</p>
                                                 </div>
                                             ))}

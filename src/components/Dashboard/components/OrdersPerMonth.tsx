@@ -1,8 +1,11 @@
 "use client"
 import DropDownGraphics from '@/components/DropDownGraphics';
 import axios from 'axios';
+import dynamic from 'next/dynamic';
 import React, { useEffect, useState } from 'react';
-import Chart from "react-apexcharts";
+
+const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
+
 
 const OrdersPerMonth = () => {
     const [values, setValues] = useState<Number[]>([]);
@@ -79,7 +82,7 @@ const OrdersPerMonth = () => {
     };
 
     return (
-        <div className="dashboard-card bg-white boxShadowCustom p-[25px] rounded-[12px] text-[#333333] font-bold w-[608px]">
+        <div className="dashboard-card bg-white boxShadowCustom p-[25px] rounded-[12px] text-[#333333] font-bold w-[608px] h-[100%]">
             <div className='flex justify-between items-center'>
                 <h2 className='text-[19px]'>Pedidos por mês</h2>
                 <DropDownGraphics />
