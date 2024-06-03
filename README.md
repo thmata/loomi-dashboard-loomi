@@ -17,26 +17,38 @@ A Aplicação deve conter de base:
 - [X] Criação da Tela de Login com Autenticação Next-Auth
 - [ ] Protejor Demais Rotas Sem Validação
 - [X] Página de Dashboard
-- [ ] Criação de Todos os Gráficos e Métricas
-- [ ] Página de Adição de Produtos
+- [X] Criação de Gráficos e Métricas
+- [X] Página de Adição de Produtos
 - [X] Página de Mapa
 
-## 📸 Imagens do Projeto Atual 28/05/2024
+## 📸 Imagens do Projeto Atual 02/06/2024
 
 <table>
   <tr>
     <td valign="top"><img src="https://github.com/thmata/loomi-dashboard-loomi/assets/85140172/20139075-8a51-4411-8338-18afcda1e72c"/></td>
-    <td valign="top"><img src="https://github.com/thmata/loomi-dashboard-loomi/assets/85140172/b6af870e-6103-4802-848e-7dbda358285a"/></td>
+    <td valign="top"><img src="https://github.com/thmata/loomi-dashboard-loomi/assets/85140172/76960755-1d02-4717-ad8a-84fd730fdd08"/></td>
   </tr>
 </table>
 
 <table>
   <tr>
+    <td valign="top"><img src="https://github.com/thmata/loomi-dashboard-loomi/assets/85140172/029d9244-00a5-4803-9e5a-94b2d4147bfd"/></td>
     <td valign="top"><img src="https://github.com/thmata/loomi-dashboard-loomi/assets/85140172/1a5b019d-dba6-4959-afa7-0f5d4493df74"/></td>
-    <td valign="top"><img src="https://github.com/thmata/loomi-dashboard-loomi/assets/85140172/da707736-fb0d-45a3-9f69-5c62a1eae725"/></td>
   </tr>
 </table>
 
+<table>
+  <tr>
+    <td valign="top"><img src="https://github.com/thmata/loomi-dashboard-loomi/assets/85140172/cf8478f4-c04f-428a-ba4f-9f1bcdd034a5"/></td>
+    <td valign="top"><img src="https://github.com/thmata/loomi-dashboard-loomi/assets/85140172/ab83e8ef-4323-4624-aa55-d157e9cd762b"/></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td valign="top"><img src="https://github.com/thmata/loomi-dashboard-loomi/assets/85140172/da707736-fb0d-45a3-9f69-5c62a1eae725"/></td>
+  </tr>
+</table>
 
 ## 🧰 Tecnologias e Bibliotecas
 
@@ -45,6 +57,7 @@ A Aplicação deve conter de base:
 * Typescript
 * Apexcharts
 * Mapbox
+* React Hook Form
 
 ## ⚙️ Rodando o Projeto
 ```bash
@@ -65,5 +78,19 @@ ou
 $ yarn dev
 # Acesse http://localhost:3000 no seu navagador
 ```
+## 🛠️ Pontos a Resolver/Melhorar
 
-EM DESENVOLVIMENTO... 🧑‍💻
+- Desenvolver um menu com SVGs de qualidade e melhorar o roteamento da página.
+- Bloquear rotas sem autenticação do usuário.
+- Resolver as poucas tipagens any.
+- Instalar um pre-commit para tratar os problemas de ESLint.
+- Resolver o problema de SSR dos gráficos.
+- Adicionar os dois gráficos faltantes.
+- Melhorar a paginação com uma resposta melhor da API.
+- Adicionar efeitos de transições em CSS.
+- Garantir a responsividade para todos os dispositivos.
+- Melhorar o menu lateral com SVGs corretos e de qualidade.
+- Deploy Vercel
+
+
+EM DESENVOLVIMENTO... 🧑‍💻🛠️
